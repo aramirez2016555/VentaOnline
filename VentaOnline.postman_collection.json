@@ -1,0 +1,325 @@
+{
+	"info": {
+		"_postman_id": "06777ca4-12a1-4fae-b635-ad8680ddba42",
+		"name": "VentaOnline",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "RegistrarUsuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "Aldana",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "Aldanasa",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "rol",
+									"value": "ROL_ADMIN",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/registrarUsuario",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"registrarUsuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "Aldana",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "username",
+									"value": "Aldanasa",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarUsuario",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjNDg4N2VjYTI3NjI1ZGMxZDc3NTUiLCJub21icmUiOiJGZWR5IiwidXNlcm5hbWUiOiJmcmUiLCJyb2wiOiJST0xfQ0xJRU5URSIsImlhdCI6MTYxNTYxMjExMiwiZXhwIjoxNjE2MDQ0MTEyfQ.ARkjM66V318_eASL0zsZOZZ3SYJtbdTcwHjyUQ83kdg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "604c4887eca27625dc1d7755",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/eliminarUsuario",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"eliminarUsuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditarUsuario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjNDg4N2VjYTI3NjI1ZGMxZDc3NTUiLCJub21icmUiOiJGZWR5IiwidXNlcm5hbWUiOiJmcmUiLCJyb2wiOiJST0xfQ0xJRU5URSIsImlhdCI6MTYxNTYxMjExMiwiZXhwIjoxNjE2MDQ0MTEyfQ.ARkjM66V318_eASL0zsZOZZ3SYJtbdTcwHjyUQ83kdg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "604c48fbeca27625dc1d7756",
+									"type": "text"
+								},
+								{
+									"key": "rol",
+									"value": "ROL_CLIENTE",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/editarUsuario",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"editarUsuario"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "604c458c1f5b7d05e0f63a7b",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"disabled": true
+								},
+								{
+									"key": "username",
+									"value": "aramirez",
+									"disabled": true
+								},
+								{
+									"key": "rol",
+									"value": "ROL_CLIENTE",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerFactura",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjNDhmYmVjYTI3NjI1ZGMxZDc3NTYiLCJub21icmUiOiJGZWR5IiwidXNlcm5hbWUiOiJmcmUiLCJyb2wiOiJST0xfQ0xJRU5URSIsImlhdCI6MTYxNTYxMjM4OSwiZXhwIjoxNjE2MDQ0Mzg5fQ.gUpf6jOPll8OiYgx4J9eIL2ELu5udQUNAru0cikHqsw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/obtenerFacturas?id=604c48fbeca27625dc1d7756",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"obtenerFacturas"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "604c48fbeca27625dc1d7756"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "AgregarProducto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "EditarProductos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarProducto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerProductos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerPorNombre",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "Tomate",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/obtenerPorNombre",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"obtenerPorNombre"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categorias",
+			"item": [
+				{
+					"name": "AgregarCategoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
